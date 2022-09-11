@@ -8,18 +8,11 @@ afterAll(async () => {
   driver.quit()
 })
 
-// describe('It should...', () => {
-//     test('do something', async () => {
-//         await driver.get('') // url
-//         const foo = driver.findElement(By.id(""))
-//         expect(foo).toEqual("")
-// })
-// })
+describe('It should...', () => {
+    test('do something', async () => {
+        await driver.get('') // url
+        const foo = driver.findElement(By.id(""))
+        expect(foo).toEqual("")
+})
+})
 
-describe('Bot should...', () => {
-    test('grab the email address from tempmail', async () => {
-        await driver.get('https://temp-mail.org')
-        const email = driver.findElement(By.id("//button[@id='mail']"))
-        expect(email).toEqual("")
-})
-})
